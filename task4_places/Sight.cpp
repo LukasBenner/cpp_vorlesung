@@ -1,11 +1,18 @@
 #include "Sight.h"
 #include <iostream>
 
-Sight::Sight(std::string name, int x_position, int y_position, std::string view)
+using namespace Places;
+
+Sight::Sight(const std::string name, int x_position, int y_position, std::string view)
 	:Place(name, x_position, y_position)
 	,m_view(view)
 {
 }
+
+Sight::~Sight()
+{
+}
+
 
 void Sight::visit()
 {

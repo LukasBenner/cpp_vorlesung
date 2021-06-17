@@ -4,12 +4,12 @@
 
 int main()
 {
-    User* users[10];
+    const User* users[10];
 
     for (int i = 0; i < 10; i++)
     {
-        const User* typ = new User();
+        const User* typ = new User("Peter");
         typ->print_user_data();
-        delete typ;
+        users[i] = typ;
     }
 }

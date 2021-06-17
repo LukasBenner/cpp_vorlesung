@@ -4,10 +4,8 @@ int User::number_of_users = 0;
 
 User::User(std::string name)
 	:m_name(name)
-	,m_id(number_of_users)
-{
-	number_of_users++;
-}
+	,m_id(number_of_users++)
+{}
 
 User::~User()
 {
